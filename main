@@ -1,0 +1,10 @@
+food = Category("Food")
+food.deposit(1000, "initial deposit")
+food.withdraw(10.15, "groceries")
+print(food.get_balance()) # should print 989.85
+print(food) # should print the Category formatted as described above
+
+clothing = Category("Clothing")
+food.transfer(50, clothing)
+print(food) # should print the updated Category formatted as described above
+print(clothing) # should print the Category formatted as described above
